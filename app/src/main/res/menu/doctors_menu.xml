@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item
+        android:id="@+id/testItem"
+        android:title="Test"
+        android:icon="@drawable/ic_filter"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="testItem2"
+                android:title="Test sub" />
+        </menu>
+
+    </item>-->
+
+    <item
+        android:id="@+id/filterDoctors"
+        android:icon="@drawable/ic_filter"
+        android:title="Фильтр"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="50">
+
+
+    </item>
+
+    <item
+        android:id="@+id/manageNiches"
+        android:title="Специализации"
+        app:showAsAction="never"
+        android:orderInCategory="100"/>
+
+    <item
+        android:id="@+id/manageQualifications"
+        android:title="Квалификации"
+        app:showAsAction="never"
+        android:orderInCategory="100"/>
+
+</menu>

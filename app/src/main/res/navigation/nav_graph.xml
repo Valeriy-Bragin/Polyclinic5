@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/diagnosisFragment">
+
+    <fragment
+        android:id="@+id/diagnosisFragment"
+        android:name="com.meriniguan.polyclinic.ui.screens.diagnosis.DiagnosisFragment"
+        android:label="DiagnosisFragment" >
+        <action
+            android:id="@+id/action_diagnosisFragment_to_addDiagnosisFragment"
+            app:destination="@id/addDiagnosisFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/patientsFragment"
+        android:name="com.meriniguan.polyclinic.ui.screens.pateients.PatientsFragment"
+        android:label="PatientsFragment" >
+        <action
+            android:id="@+id/action_patientsFragment_to_addPatientsFragment"
+            app:destination="@id/addPatientsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doctorsFragment"
+        android:name="com.meriniguan.polyclinic.ui.screens.doctors.DoctorsFragment"
+        android:label="DoctorsFragment" />
+    <dialog
+        android:id="@+id/datePickerFragment"
+        android:name="com.meriniguan.polyclinic.ui.screens.dialogs.DatePickerFragment"
+        android:label="DatePickerFragment" />
+    <action android:id="@+id/action_global_datePickerFragment" app:destination="@id/datePickerFragment" />
+    <fragment
+        android:id="@+id/addPatientsFragment"
+        android:name="com.meriniguan.polyclinic.ui.screens.addpatients.AddPatientsFragment"
+        android:label="Добавить пациента" >
+        <argument
+            android:name="patient"
+            app:argType="com.meriniguan.polyclinic.model.patient.room.Patient"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDiagnosisFragment"
+        android:name="com.meriniguan.polyclinic.ui.screens.adddiagnosis.AddDiagnosisFragment"
+        android:label="AddDiagnosisFragment" >
+        <argument
+            android:name="diagnosis"
+            app:argType="com.meriniguan.polyclinic.model.diagnosis.room.Diagnosis"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+</navigation>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="66dp"
+    android:padding="8dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/ic_arrow_down"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:hint="Болезнь">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/deceaseET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/ic_arrow_down"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:hint="Пациент">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/patientET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/ic_arrow_down"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:hint="Доктор">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/doctorET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:hint="Период потери трудоспособности">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/periodET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/ic_calendar"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:hint="Начало лечения">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/startET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Требуется амбулаторное лечение:"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/amb_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Да"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/amb_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Нет"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Состоит на диспансерном учёте:"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/record_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Да"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/record_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Нет"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/doneFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="120dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_done" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

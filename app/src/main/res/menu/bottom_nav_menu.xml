@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/diagnosisFragment"
+        android:title="Диагнозы"
+        android:icon="@drawable/ic_medical_information"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/patientsFragment"
+        android:title="Пациенты"
+        android:icon="@drawable/ic_patient"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/doctorsFragment"
+        android:title="Доктора"
+        android:icon="@drawable/ic_doctor"
+        app:showAsAction="always"/>
+</menu>
